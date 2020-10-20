@@ -27,7 +27,7 @@ const handleRegister = (req, res, db, bycrpt) => {
         .then(trx.commit)
         .catch(trx.rollback)
     })
-    .catch(err => res.status(400).send('unable to register'))
+    .catch(err => res.status(400).send('unable register'))
 }
 
 module.exports = {
